@@ -56,10 +56,6 @@ nav.navbar.bootsnav {
     border: 0 none;
 }
 
-/*.logo {
-    width: 160px;
-}*/
-
 /* Banner */
 .banner {
     margin-top: 100px;
@@ -80,54 +76,10 @@ nav.navbar.bootsnav {
     padding-top: 20px;
 }
 
-.inner_banner {
-    margin-left: 170px;
-    margin-top: 180px;
-}
-
-.banner_content {
-    float: left;
-    font-size: 16pt;
-    font-weight: bold;
-    line-height: 22px;
-    margin-right: 20px;
-    width: 330px;
-    text-align: center;
-}
-
-.banner_content p {
-    margin-bottom: 15px;
-}
-
-.stamp {
-    float: left;
-    width: 160px;
-    height: 160px;
-}
-
-header .caption {
-    color: #d79c57;
-    font-size: 11px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    margin-left: 28px;
-    text-transform: uppercase;
-}
-
 /* MEGAMENU STYLE
 =================================*/
 nav.bootsnav .container {
     position: relative;
-}
-
-/* Side Menu
-=================================*/
-body {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
 
 /* Transparent
@@ -147,7 +99,7 @@ nav.navbar.bootsnav.no-background {
 }
 
 .feature_text {
-    margin: 75% 10%;
+    margin: 20% 10%;
     font-weight: bold;
     text-align: center;
 }
@@ -155,7 +107,7 @@ nav.navbar.bootsnav.no-background {
 /* First Section */
 /* Feature */
 .shack_burger {
-    float: right;
+    float: left;
     margin-right: 20px;
     width: 255px;
 }
@@ -165,53 +117,8 @@ nav.navbar.bootsnav.no-background {
     text-align: center;
 }
 
-/* signature */
-.shape {
-    background: linear-gradient(#ad021d, #c72937) repeat scroll 0 0;
-    height: 116px;
-    width: 136px;
-    position: relative;
-}
-
-.shape:after {
-    border-bottom: 20px solid transparent;
-    border-left: 68px solid #c72937;
-    border-right: 68px solid #c72937;
-    bottom: -20px;
-    content: "";
-    position: absolute;
-}
-
-.shape .flaticon:before {
-    display: block;
-    font-size: 50px;
-    height: 65px;
-    margin: 0;
-    padding-top: 34px;
-    text-align: center;
-    width: 100%;
-}
-
-.shape > p {
-    font-size: 17px;
-    font-weight: bold;
-    padding: 2px 10px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.signature_content {
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 20px;
-    margin-left: 4px;
-    margin-top: 42px;
-    width: 168px;
-    text-align: center;
-}
-
 .classic_btn {
-    background: #d14449 none repeat scroll 0 0;
+    background: #3678e5 none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-size: 22px;
@@ -230,8 +137,8 @@ nav.navbar.bootsnav.no-background {
 .classic_btn:after {
     content: "";
     position: absolute;
-    border-top: 18px solid #d14449;
-    border-bottom: 18px solid #d14449;
+    border-top: 18px solid #3678e5;
+    border-bottom: 18px solid #3678e5;
     border-right: 10px solid transparent;
     right: -10px;
     top: 0;
@@ -519,6 +426,7 @@ nav.navbar.bootsnav.no-background {
 footer {
     background: #454646 none repeat scroll 0 0;
     padding-bottom: 42px;
+    margin-top: 2em;
 }
 
 footer h2 {
@@ -656,33 +564,29 @@ address, .schedule > p {
     }
 }
 
-@media (min-width: 1024px) {
-
-    /* Navbar Transparent
-    =================================*/
-    nav.navbar.bootsnav.no-background {
-        background-color: transparent;
-        border: none;
+@media (min-width: 1200px) {
+    .feature, .signature {
+        height: 360px;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
-    header {
+    /*header {
         background-size: 100% auto;
         color: #f1f1f1;
         overflow: hidden;
         background: url('../images/capa/capa.jpeg') no-repeat;
         height: auto;
         max-height: 660px;
-    }
+    }*/
 }
 
 @media (max-width: 1200px) {
-    header {
-        height: auto;
-        max-height: 467px;
-        background: url('../images/capa/capa.jpeg') no-repeat;
-    }
+    /* header {
+         height: auto;
+         max-height: 467px;
+         background: url('../images/capa/capa.jpeg') no-repeat;
+     }*/
 }
 
 /* media query for other devices */
@@ -714,24 +618,27 @@ address, .schedule > p {
 }
 
 @media (min-width: 992px) {
-
     .banner_content {
         width: 100%;
     }
 
     /*First section*/
     .feature {
-        background: url('../images/primeira-sessao/feature_bg.jpeg') no-repeat;
+        background: url('../images/primeira-sessao/x-baguncinha.png') no-repeat;
         background-size: 100% auto;
-        height: 300px;
+        min-height: 291px;
         overflow: hidden;
         margin-top: 50px;
     }
 
+    .shack_burger {
+        margin-left: 30px;
+    }
+
     .signature {
-        background: url('../images/primeira-sessao/signature.jpeg') no-repeat;
+        background: url('../images/primeira-sessao/x-tudo.jpg') no-repeat;
         background-size: 100% auto;
-        height: 300px;
+        min-height: 291px;
         padding: 0 18px 18px;
         margin-top: 50px;
     }
@@ -790,29 +697,27 @@ address, .schedule > p {
 }
 
 @media (max-width: 991px) {
-    header {
-        height: auto;
-        max-height: 467px;
-        background: url('../images/capa/capa_991.jpeg') no-repeat;
-    }
-
+    /* header {
+         height: auto;
+         max-height: 467px;
+         background: url('../images/capa/capa_991.jpeg') no-repeat;
+     }*/
     /*First section*/
     .feature {
-        background: url('../images/primeira-sessao/feature_bg.jpeg') no-repeat;
-        background-size: 100% 100%;
+        background: url('../images/primeira-sessao/x-baguncinha.png') no-repeat;
+        background-size: 100% auto;
+        min-height: 291px;
         overflow: hidden;
         margin-top: 50px;
     }
 
     .signature {
-        background: url('../images/primeira-sessao/signature.jpeg') no-repeat;
-        background-size: 100% 100%;
+        background: url('../images/primeira-sessao/x-tudo.jpg') no-repeat;
+        background-size: 100% auto;
         padding: 0 18px 18px;
+        min-height: 291px;
+        overflow: hidden;
         margin-top: 50px;
-    }
-
-    .feature, .signature {
-        height: 300px;
     }
 
     /*Second section*/
@@ -923,13 +828,12 @@ address, .schedule > p {
 }
 
 @media (max-width: 767px) {
-    header {
+    /*header {
         background-size: 100% auto;
         min-height: 300px;
         max-height: 361px;
-        background: url('../images/capa/capa_767.jpeg') no-repeat;
-    }
-
+        background: url('../images/') no-repeat;
+    }*/
     /*navbar*/
     nav.navbar.bootsnav .navbar-header {
         padding-left: 15px;
@@ -948,20 +852,19 @@ address, .schedule > p {
 
     /*First section*/
     .feature {
-        background: url('../images/primeira-sessao/feature_bg.jpeg') no-repeat;
+        background: url('../images/primeira-sessao/x-baguncinha.png') no-repeat;
         background-size: 100% auto;
-        height: 300px;
         overflow: hidden;
         margin-top: 50px;
     }
 
     .feature_text {
         display: block;
-        margin: 50% 10%;
+        margin: 20% 10%;
     }
 
     .signature {
-        background: url('../images/primeira-sessao/signature.jpeg') no-repeat;
+        background: url('../images/primeira-sessao/x-tudo-479.jpg') no-repeat;
         background-size: 100% auto;
         height: 300px;
         padding: 0 18px 18px;
@@ -1047,29 +950,26 @@ address, .schedule > p {
 
 }
 
+
 @media (max-width: 479px) {
-    header {
+    /*header {
         background: url('../images/capa/capa_479.jpeg') no-repeat;
         background-size: 100% auto;
         overflow: hidden;
         min-height: 200px;
         max-height: 225px;
-    }
-
+    }*/
     /*First section*/
     .feature {
-        background: url('../images/primeira-sessao/feature_bg.jpeg') no-repeat;
-        background-size: 100% 100%;
-        height: 300px;
+        background: url('../images/primeira-sessao/x-baguncinha-479.png') no-repeat;
+        background-size: 100% auto;
         overflow: hidden;
-        margin-top: 0;
     }
 
     .signature {
-        background: url('../images/primeira-sessao/signature.jpeg') no-repeat;
+        background: url('../images/primeira-sessao/x-tudo-479.jpg') no-repeat;
         background-size: 100% auto;
-        height: 300px;
-        padding: 0 18px 18px;
+        padding: 0;
         margin-top: 25px;
     }
 
@@ -1103,15 +1003,12 @@ address, .schedule > p {
     }
 
     .shack_burger {
-        background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
         float: none;
-        margin: 0;
-        padding: 10px;
+        font-size: 10pt;
+        padding-top: 110px;
         width: 100%;
-    }
-
-    .chicken {
-        margin: 0 auto;
+        height: 300px;
     }
 
     .classic, #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
