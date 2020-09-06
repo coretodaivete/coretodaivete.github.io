@@ -123,7 +123,6 @@ nav.navbar.bootsnav.no-background {
     display: inline-block;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 18px;
     padding: 9px 13px 9px 18px;
     text-transform: uppercase;
     position: relative;
@@ -152,22 +151,6 @@ nav.navbar.bootsnav.no-background {
 .classic_btn:hover:after {
     border-top: 18px solid #c58e13;
     border-bottom: 18px solid #c58e13;
-}
-
-.classic .overlay {
-    background: rgba(147, 79, 50, 0.93) none repeat scroll 0 0;
-    bottom: 0;
-    font-size: 14px;
-    line-height: 17px;
-    padding: 20px 26px 2px;
-    position: absolute;
-    width: 100%;
-}
-
-.classic .overlay p {
-    margin-bottom: 20px;
-    font-size: 14pt;
-    font-weight: bold;
 }
 
 /* Small Carousel */
@@ -216,9 +199,9 @@ nav.navbar.bootsnav.no-background {
 
 /* Info Button */
 .info_btn:before {
-    border-bottom: 15px solid #d14149;
+    border-bottom: 15px solid #3678e5;
     border-left: 8px solid transparent;
-    border-top: 15px solid #d14149;
+    border-top: 15px solid #3678e5;
     content: "";
     left: -8px;
     position: absolute;
@@ -231,11 +214,11 @@ nav.navbar.bootsnav.no-background {
 }
 
 .info_btn {
-    background: #d14149 none repeat scroll 0 0;
+    background: #3678e5 none repeat scroll 0 0;
     color: #fff;
     font-weight: bold;
     display: inline-block;
-    font-size: 20px;
+    font-size: 22px;
     left: -3px;
     padding: 6px 20px;
     position: absolute;
@@ -246,9 +229,9 @@ nav.navbar.bootsnav.no-background {
 }
 
 .info_btn:after {
-    border-bottom: 15px solid #d14149;
+    border-bottom: 15px solid #3678e5;
     border-right: 8px solid transparent;
-    border-top: 15px solid #d14149;
+    border-top: 15px solid #3678e5;
     content: "";
     position: absolute;
     right: -8px;
@@ -261,18 +244,18 @@ nav.navbar.bootsnav.no-background {
 }
 
 .info_btn:hover, .info_btn:focus {
-    background: #b83a41 none repeat scroll 0 0;
+    background: #3678e5 none repeat scroll 0 0;
     color: #fff;
 }
 
 .info_btn:hover:before, .info_btn:focus:before {
-    border-bottom: 15px solid #b83a41;
-    border-top: 15px solid #b83a41;
+    border-bottom: 15px solid #3678e5;
+    border-top: 15px solid #3678e5;
 }
 
 .info_btn:hover:after, .info_btn:focus:after {
-    border-bottom: 15px solid #b83a41;
-    border-top: 15px solid #b83a41;
+    border-bottom: 15px solid #3678e5;
+    border-top: 15px solid #3678e5;
 }
 
 .info_btn_shadow:before {
@@ -565,6 +548,10 @@ address, .schedule > p {
 }
 
 @media (min-width: 1200px) {
+    #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
+        height: 540px;
+    }
+
     .feature, .signature {
         height: 360px;
     }
@@ -617,6 +604,13 @@ address, .schedule > p {
 
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
+        height: 340px;
+    }
+
+}
+
 @media (min-width: 992px) {
     .banner_content {
         width: 100%;
@@ -624,7 +618,7 @@ address, .schedule > p {
 
     /*First section*/
     .feature {
-        background: url('../images/primeira-sessao/x-baguncinha.png') no-repeat;
+        background: url('../images/primeira-sessao/x-baguncinha.jpg') no-repeat;
         background-size: 100% auto;
         min-height: 291px;
         overflow: hidden;
@@ -645,9 +639,10 @@ address, .schedule > p {
 
     /*Second section*/
     .classic {
-        background: url(../images/segunda-sessao/classic_bg.jpeg) no-repeat;
+        background: url(../images/segunda-sessao/refeicao-479.jpg) no-repeat;
+        background-size: 100% auto;
         margin-top: 25px;
-        height: 360px;
+        height: 540px;
         position: relative;
         overflow: hidden;
     }
@@ -704,7 +699,7 @@ address, .schedule > p {
      }*/
     /*First section*/
     .feature {
-        background: url('../images/primeira-sessao/x-baguncinha.png') no-repeat;
+        background: url('../images/primeira-sessao/x-baguncinha.jpg') no-repeat;
         background-size: 100% auto;
         min-height: 291px;
         overflow: hidden;
@@ -722,10 +717,10 @@ address, .schedule > p {
 
     /*Second section*/
     .classic {
-        background: url(../images/segunda-sessao/classic_bg.jpeg) no-repeat;
+        background: url(../images/segunda-sessao/refeicao-479.jpg) no-repeat;
         background-size: 100% auto;
         margin-top: 25px;
-        height: 430px;
+        height: 550px;
         position: relative;
         overflow: hidden;
     }
@@ -852,7 +847,7 @@ address, .schedule > p {
 
     /*First section*/
     .feature {
-        background: url('../images/primeira-sessao/x-baguncinha.png') no-repeat;
+        background: url('../images/primeira-sessao/x-baguncinha.jpg') no-repeat;
         background-size: 100% auto;
         overflow: hidden;
         margin-top: 50px;
@@ -873,10 +868,10 @@ address, .schedule > p {
 
     /*Second section*/
     .classic {
-        background: url(../images/segunda-sessao/classic_bg.jpeg) no-repeat;
+        background: url(../images/segunda-sessao/refeicao-720.jpg) no-repeat;
         background-size: 100% auto;
         margin-top: 25px;
-        height: 300px;
+        height: 550px;
         position: relative;
         overflow: hidden;
     }
@@ -909,16 +904,6 @@ address, .schedule > p {
         height: 120px;
         width: 120px;
     }
-
-    .classic .overlay {
-        line-height: 16px;
-        padding: 15px 15px 5px;
-    }
-
-    .classic .overlay p {
-        margin-bottom: 10px;
-    }
-
 
     .signature_content {
         width: 180px;
@@ -961,7 +946,7 @@ address, .schedule > p {
     }*/
     /*First section*/
     .feature {
-        background: url('../images/primeira-sessao/x-baguncinha-479.png') no-repeat;
+        background: url('../images/primeira-sessao/x-baguncinha-479.jpg') no-repeat;
         background-size: 100% auto;
         overflow: hidden;
     }
@@ -975,9 +960,10 @@ address, .schedule > p {
 
     /*Second section*/
     .classic {
-        background: url(../images/segunda-sessao/classic_bg.jpeg) no-repeat;
+        background: url(../images/segunda-sessao/refeicao-479.jpg) no-repeat;
+        background-size: 100% auto;
         margin-top: 25px;
-        height: 300px;
+        height: 359px;
         position: relative;
         overflow: hidden;
     }
@@ -1011,7 +997,7 @@ address, .schedule > p {
         height: 300px;
     }
 
-    .classic, #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
+    #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
         height: 300px;
     }
 
