@@ -148,6 +148,10 @@ nav.navbar.bootsnav.no-background {
     -moz-transition: border .3s ease-in-out;
 }
 
+.classic .classic_btn {
+    top: 36px;
+}
+
 .classic_btn:hover:after {
     border-top: 18px solid #c58e13;
     border-bottom: 18px solid #c58e13;
@@ -155,7 +159,7 @@ nav.navbar.bootsnav.no-background {
 
 /* Small Carousel */
 #small_carousel {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
@@ -357,7 +361,11 @@ nav.navbar.bootsnav.no-background {
     margin-bottom: 35px;
     height: 190px;
     padding: 75px 0 40px;
-    background-color: #481a04;
+    background: rgb(2, 0, 36);
+    background: -moz-linear-gradient(261deg, rgba(2, 0, 36, 1) 0%, rgba(54, 120, 229, 0.8589810924369747) 35%, rgba(0, 212, 255, 1) 100%);
+    background: -webkit-linear-gradient(261deg, rgba(2, 0, 36, 1) 0%, rgba(54, 120, 229, 0.8589810924369747) 35%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(261deg, rgba(2, 0, 36, 1) 0%, rgba(54, 120, 229, 0.8589810924369747) 35%, rgba(0, 212, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00d4ff", GradientType=1);
 }
 
 .inner_content {
@@ -389,7 +397,7 @@ nav.navbar.bootsnav.no-background {
 
 /* Lock */
 #lock {
-    background: url(../images/lock_bg.jpeg) no-repeat;
+    background: url(../images/quarta-sessao/lock_bg.jpg) no-repeat;
     background-size: 100% 100%;
     margin-top: 40px;
     min-height: 185px;
@@ -548,13 +556,13 @@ address, .schedule > p {
 }
 
 @media (min-width: 1200px) {
-    #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
-        max-height: 540px;
-        height: auto;
-    }
-
     .feature, .signature {
         height: 360px;
+    }
+
+    #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img {
+        height: auto;
+        max-height: 600px;
     }
 }
 
@@ -584,8 +592,8 @@ address, .schedule > p {
         margin-right: 0;
     }
 
-    .inner_banner {
-        margin-left: 100px;
+    .banner {
+        margin-top: 150px;
     }
 
     .info_btn_shadow {
@@ -602,15 +610,12 @@ address, .schedule > p {
         letter-spacing: 0;
     }
 
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
-        height: 340px;
+    #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img {
+        height: auto;
+        max-height: 500px;
     }
-
 }
+
 
 @media (min-width: 992px) {
     .banner_content {
@@ -638,14 +643,9 @@ address, .schedule > p {
         margin-top: 50px;
     }
 
-    /*Second section*/
-    .classic {
-        background: url(../images/segunda-sessao/refeicao-479.jpg) no-repeat;
-        background-size: 100% auto;
-        margin-top: 25px;
-        height: 540px;
-        position: relative;
-        overflow: hidden;
+    #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
+        height: auto;
+        max-height: 540px;
     }
 }
 
@@ -716,15 +716,6 @@ address, .schedule > p {
         margin-top: 50px;
     }
 
-    /*Second section*/
-    .classic {
-        background: url(../images/segunda-sessao/refeicao-479.jpg) no-repeat;
-        background-size: 100% auto;
-        margin-top: 25px;
-        height: 550px;
-        position: relative;
-        overflow: hidden;
-    }
 
     h2 {
         font-size: 30px;
@@ -768,7 +759,13 @@ address, .schedule > p {
     }
 
     #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img {
-        height: 500px;
+        height: auto;
+        max-height: 390px;
+    }
+
+    #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
+        height: auto;
+        max-height: 540px;
     }
 
     #carousel .carousel-caption {
@@ -867,16 +864,6 @@ address, .schedule > p {
         margin-top: 25px;
     }
 
-    /*Second section*/
-    .classic {
-        background: url(../images/segunda-sessao/refeicao-720.jpg) no-repeat;
-        background-size: 100% auto;
-        margin-top: 25px;
-        height: 550px;
-        position: relative;
-        overflow: hidden;
-    }
-
     h1 {
         font-size: 50px;
     }
@@ -910,8 +897,9 @@ address, .schedule > p {
         width: 180px;
     }
 
-    #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img {
-        height: 400px;
+    #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
+        height: auto;
+        max-height: 540px;
     }
 
     #carousel .carousel-caption {
@@ -959,16 +947,6 @@ address, .schedule > p {
         margin-top: 25px;
     }
 
-    /*Second section*/
-    .classic {
-        background: url(../images/segunda-sessao/refeicao-479.jpg) no-repeat;
-        background-size: 100% auto;
-        margin-top: 25px;
-        height: 359px;
-        position: relative;
-        overflow: hidden;
-    }
-
     h1 {
         font-size: 40px;
     }
@@ -999,7 +977,8 @@ address, .schedule > p {
     }
 
     #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
-        height: 300px;
+        height: auto;
+        max-height: 336px;
     }
 
     #small_carousel .carousel-caption {
@@ -1017,7 +996,8 @@ address, .schedule > p {
     }
 
     #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img {
-        height: 350px;
+        height: auto;
+        max-height: 240px;
     }
 
     #carousel .carousel-caption {
