@@ -549,7 +549,8 @@ address, .schedule > p {
 
 @media (min-width: 1200px) {
     #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
-        height: 540px;
+        max-height: 540px;
+        height: auto;
     }
 
     .feature, .signature {
