@@ -50,6 +50,16 @@ a:hover, a:focus {
 }
 
 /* Header */
+header {
+    background: rgb(2, 0, 36);
+    background: -moz-linear-gradient(76deg, rgba(2, 0, 36, 1) 0%, rgba(241, 134, 7, 0.7469362745098039) 0%, rgba(0, 212, 255, 1) 100%);
+    background: -webkit-linear-gradient(76deg, rgba(2, 0, 36, 1) 0%, rgba(241, 134, 7, 0.7469362745098039) 0%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(76deg, rgba(2, 0, 36, 1) 0%, rgba(241, 134, 7, 0.7469362745098039) 0%, rgba(0, 212, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00d4ff", GradientType=1);
+    width: 100%;
+    min-height: 300px;
+    max-height: 450px
+}
 
 nav.navbar.bootsnav {
     background-color: #444;
@@ -362,9 +372,10 @@ nav.navbar.bootsnav.no-background {
     height: 190px;
     padding: 75px 0 40px;
     background: rgb(2, 0, 36);
-    background: -moz-linear-gradient(261deg, rgba(2, 0, 36, 1) 0%, rgba(54, 120, 229, 0.8589810924369747) 35%, rgba(0, 212, 255, 1) 100%);
-    background: -webkit-linear-gradient(261deg, rgba(2, 0, 36, 1) 0%, rgba(54, 120, 229, 0.8589810924369747) 35%, rgba(0, 212, 255, 1) 100%);
-    background: linear-gradient(261deg, rgba(2, 0, 36, 1) 0%, rgba(54, 120, 229, 0.8589810924369747) 35%, rgba(0, 212, 255, 1) 100%);
+    background: rgb(2, 0, 36);
+    background: -moz-linear-gradient(76deg, rgba(2, 0, 36, 1) 0%, rgba(241, 134, 7, 0.7469362745098039) 0%, rgba(0, 212, 255, 1) 100%);
+    background: -webkit-linear-gradient(76deg, rgba(2, 0, 36, 1) 0%, rgba(241, 134, 7, 0.7469362745098039) 0%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(76deg, rgba(2, 0, 36, 1) 0%, rgba(241, 134, 7, 0.7469362745098039) 0%, rgba(0, 212, 255, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00d4ff", GradientType=1);
 }
 
@@ -383,12 +394,15 @@ nav.navbar.bootsnav.no-background {
     margin-right: 20px;
     margin-top: 10px;
     float: left;
+    color: white;
 }
 
 .forth_sec h2 {
     display: inline-block;
-    font-size: 32px;
+    font-size: 21pt;
     padding-top: 15px;
+    color: white;
+
 }
 
 .inner_content .flaticon-burger, .inner_content .flaticon-food {
@@ -397,8 +411,7 @@ nav.navbar.bootsnav.no-background {
 
 /* Lock */
 #lock {
-    background: url(../images/quarta-sessao/lock_bg.jpg) no-repeat;
-    background-size: 100% 100%;
+    background: #454646 none repeat scroll 0 0;
     margin-top: 40px;
     min-height: 185px;
     padding: 66px 40px 40px;
@@ -477,14 +490,14 @@ footer h2 {
 }
 
 /* Contact Us and Subscribe */
-.contact_us > a, .schedule p {
+.contact_us > a, #lock a, .schedule p {
     color: #bec5cd;
     display: block;
     line-height: 24px;
     margin: 16px 0;
 }
 
-.contact_us a:hover, .contact_us a:focus {
+.contact_us a:hover, #lock a:hover, .contact_us a:focus, #lock a:focus {
     text-decoration: underline;
 }
 
@@ -666,7 +679,6 @@ address, .schedule > p {
         padding-right: 30px;
     }
 
-
     nav.navbar.bootsnav .navbar-nav {
         float: none !important;
         padding-left: 30px;
@@ -793,7 +805,7 @@ address, .schedule > p {
     }
 
     .forth_sec .flaticon {
-        margin-right: 15px;;
+        margin-right: 8px;;
     }
 
     .forth_sec .flaticon:before {
