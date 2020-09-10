@@ -61,15 +61,20 @@ header {
     max-height: 450px
 }
 
+.logo {
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    position: relative;
+}
+
 nav.navbar.bootsnav {
     background-color: #444;
     border: 0 none;
 }
 
 /* Banner */
-.banner {
-    margin-top: 100px;
-}
 
 .banner > p.title {
     font-size: 32px;
@@ -80,10 +85,33 @@ nav.navbar.bootsnav {
     padding-top: 20px;
 }
 
+.banner_side {
+    width: 75%;
+    float: left;
+    position: relative;
+    top: 7rem;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20pt;
+}
+
 .banner h1 {
     text-align: center;
     color: #f1f1f1;
     padding-top: 20px;
+}
+
+.banner_content {
+    float: left;
+    position: relative;
+    top: 7rem;
+    font-size: 17pt;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.banner_content p {
+    margin-bottom: 15px;
 }
 
 /* MEGAMENU STYLE
@@ -417,13 +445,13 @@ nav.navbar.bootsnav.no-background {
     padding: 66px 40px 40px;
     text-align: center;
     font-size: 18px;
-    font-weight: bold;
 }
 
 #lock > h2 {
     font-family: "Maitree", serif;
     font-weight: bold;
     line-height: 36px;
+    margin-bottom: 2rem;
 }
 
 /* Footer */
@@ -548,17 +576,6 @@ address, .schedule > p {
 
 }
 
-@media (min-width: 1401px) {
-    .header-1400 {
-        background-image: url('../images/capa/capa.jpeg');
-        background-size: 100% auto;
-        color: #f1f1f1;
-        overflow: hidden;
-        height: auto;
-        max-height: 660px;
-        margin: 1px 0;
-    }
-}
 
 @media (min-width: 1024px) and (max-width: 1400px) {
     body.wrap-nav-sidebar .wrapper .container {
@@ -605,10 +622,6 @@ address, .schedule > p {
         margin-right: 0;
     }
 
-    .banner {
-        margin-top: 150px;
-    }
-
     .info_btn_shadow {
         margin-top: 45px;
         width: 144px;
@@ -631,9 +644,6 @@ address, .schedule > p {
 
 
 @media (min-width: 992px) {
-    .banner_content {
-        width: 100%;
-    }
 
     /*First section*/
     .feature {
@@ -659,6 +669,12 @@ address, .schedule > p {
     #small_carousel .carousel-inner > .item > a > img, #small_carousel .carousel-inner > .item > img {
         height: auto;
         max-height: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner_side {
+        max-width: 62%
     }
 }
 
@@ -833,12 +849,6 @@ address, .schedule > p {
 }
 
 @media (max-width: 767px) {
-    /*header {
-        background-size: 100% auto;
-        min-height: 300px;
-        max-height: 361px;
-        background: url('../images/') no-repeat;
-    }*/
     /*navbar*/
     nav.navbar.bootsnav .navbar-header {
         padding-left: 15px;
@@ -889,22 +899,6 @@ address, .schedule > p {
         text-align: center;
     }
 
-    .banner_content {
-        display: inline-block;
-        float: none;
-        margin-right: 15px;
-        padding: 0;
-        text-align: left;
-        width: 60%;
-    }
-
-    .stamp {
-        display: inline-flex;
-        float: none;
-        height: 120px;
-        width: 120px;
-    }
-
     .signature_content {
         width: 180px;
     }
@@ -936,15 +930,22 @@ address, .schedule > p {
 
 }
 
+@media (min-width: 480px) and (max-width: 767px) {
+    .banner_content {
+        width: 50%
+    }
+
+    .logo {
+        max-width: 50%
+    }
+}
 
 @media (max-width: 479px) {
-    /*header {
-        background: url('../images/capa/capa_479.jpeg') no-repeat;
-        background-size: 100% auto;
-        overflow: hidden;
-        min-height: 200px;
-        max-height: 225px;
-    }*/
+    .banner_content {
+        width: 100%;
+        top: 0
+    }
+
     /*First section*/
     .feature {
         background: url('../images/primeira-sessao/x-baguncinha-479.jpg') no-repeat;
@@ -969,10 +970,6 @@ address, .schedule > p {
 
     .banner > p.title {
         font-size: 20px;
-    }
-
-    .banner_content {
-        width: 50%;
     }
 
     header .caption {
@@ -1009,11 +1006,12 @@ address, .schedule > p {
 
     #carousel .carousel-inner > .item > a > img, #carousel .carousel-inner > .item > img {
         height: auto;
-        max-height: 240px;
+        min-height: 152px;
     }
 
     #carousel .carousel-caption {
-        width: 250px;
+        width: 100%;
+        min-height: 130px;
         right: 20px;
     }
 
