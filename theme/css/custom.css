@@ -394,7 +394,7 @@ nav.navbar.bootsnav.no-background {
 
 
 /* Forth Secition */
-.menu, .drinks, .sides {
+.menu {
     margin-top: 35px;
     margin-bottom: 35px;
     height: 190px;
@@ -410,7 +410,8 @@ nav.navbar.bootsnav.no-background {
 .inner_content {
     display: block;
     margin: 0 auto;
-    width: 220px;
+    width: 100%;
+    text-align: center;
 }
 
 .forth_sec .flaticon:before {
